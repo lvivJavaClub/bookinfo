@@ -6,21 +6,10 @@ This example deploys a sample application composed of four separate microservice
 
 How to do single specific targeted activities with the Istio system. See [Tasks on Istio.io](https://istio.io/docs/tasks/)
 
-* [Traffic Management on Istio.io](https://istio.io/docs/tasks/traffic-management/)
-
-Tasks that demonstrate Istio's traffic routing features.
-
-* Security
-
-Demonstrates how to secure the mesh.
-
-* Policies
-
-Demonstrates policy enforcement features.
-
-* Telemetry
-
-Demonstrates how to collect telemetry information from the mesh.
+* [Traffic Management on Istio.io](https://istio.io/docs/tasks/traffic-management/) Tasks that demonstrate Istio's traffic routing features.
+* Security Demonstrates how to secure the mesh.
+* Policies Demonstrates policy enforcement features.
+* Telemetry Demonstrates how to collect telemetry information from the mesh.
 
 # Requirements
 
