@@ -1,21 +1,25 @@
 # Istio playbook
 
-This example deploys a sample application composed of four separate microservices used to demonstrate various Istio features. The application displays information about a book, similar to a single catalog entry of an online book store. Displayed on the page is a description of the book, book details (ISBN, number of pages, and so on), and a few book reviews. See [Bookinfo Application](https://istio.io/docs/examples/bookinfo/)
+This example deploys a sample application composed of four separate microservices used to demonstrate various Istio features. The application displays information about a book, similar to a single catalog entry of an online book store. Displayed on the page is a description of the book, book details (ISBN, number of pages, and so on), and a few book reviews. See [Bookinfo Application on Istio.io](https://istio.io/docs/examples/bookinfo/)
 
 # Tasks
 
-How to do single specific targeted activities with the Istio system. See [Tasks](https://istio.io/docs/tasks/)
+How to do single specific targeted activities with the Istio system. See [Tasks on Istio.io](https://istio.io/docs/tasks/)
 
-[Traffic Management](https://istio.io/docs/tasks/traffic-management/)
+* [Traffic Management on Istio.io](https://istio.io/docs/tasks/traffic-management/)
+
 Tasks that demonstrate Istio's traffic routing features.
 
-Security
+* Security
+
 Demonstrates how to secure the mesh.
 
-Policies
+* Policies
+
 Demonstrates policy enforcement features.
 
-Telemetry
+* Telemetry
+
 Demonstrates how to collect telemetry information from the mesh.
 
 # Requirements
@@ -33,7 +37,7 @@ Use `make` for install/setup/stop...
 
 ## Fault Injection:
 
-See [Fault Injection](https://istio.io/docs/tasks/traffic-management/fault-injection/)
+See [Fault Injection on Istio.io](https://istio.io/docs/tasks/traffic-management/fault-injection/)
 This task shows you how to inject faults to test the resiliency of your application.
 
 * `make tratings-test-delay` - Injecting an HTTP delay fault
