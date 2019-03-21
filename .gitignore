@@ -1,0 +1,4 @@
+.idea/
+istio-1.1.0/
+*.yaml
+*.yaml.*
