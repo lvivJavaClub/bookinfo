@@ -19,6 +19,9 @@ start:
 	kubectl apply -f bookinfo-gateway.yaml
 	wget https://raw.githubusercontent.com/istio/istio/release-1.1/samples/bookinfo/networking/destination-rule-all-mtls.yaml
 	kubectl apply -f destination-rule-all-mtls.yaml
+virtual-service-all-v1:
+	clear
+	@echo "Virtual service all v1..."
 	wget https://raw.githubusercontent.com/istio/istio/release-1.1/samples/bookinfo/networking/virtual-service-all-v1.yaml
 	kubectl apply -f virtual-service-all-v1.yaml
 	weg https://raw.githubusercontent.com/istio/istio/release-1.1/samples/bookinfo/networking/virtual-service-reviews-test-v2.yaml
@@ -50,3 +53,6 @@ stop:
 	clear
 	@echo "Stop..."
 	kubectl delete -f bookinfo-istio.yaml
+	kubectl delete -f bookinfo-gateway.yaml
+	kubectl delete -f destination-rule-all-mtls.yaml
+	kubectl delete virtualservices --all
