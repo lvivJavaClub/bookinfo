@@ -9,6 +9,12 @@ help:
 	@echo "Fault Injection:"
 	@echo "make tratings-test-delay - Injecting an HTTP delay fault"
 	@echo "make ratings-test-abort  - Injecting an HTTP abort fault"
+	@echo ""
+	@echo "Traffic Shifting:"
+	@echo "make reviews-50-v3 - Apply weight-based routing"
+	@echo ""
+	@echo "Mirroring:"
+	@echo "make mirroring - Apply mirroring routing"
 start:
 	clear
 	@echo "Start..."
@@ -36,6 +42,15 @@ ratings-test-abort:
 	@echo "Ratings test abort:"
 	weg https://raw.githubusercontent.com/istio/istio/release-1.1/samples/bookinfo/networking/virtual-service-ratings-test-abort.yaml
 	kubectl apply -f virtual-service-ratings-test-abort.yaml
+reviews-50-v3:
+	clear
+	@echo "Apply weight-based routing:"
+	wget https://raw.githubusercontent.com/istio/istio/release-1.1/samples/bookinfo/networking/virtual-service-reviews-50-v3.yaml
+	kubectl apply -f virtual-service-reviews-50-v3.yaml
+mirroring:
+	clear
+	@echo "Apply mirroring routing:"
+	kubectl apply -f virtual-service-reviews-mirroring.yaml
 install:
 	clear
 	@echo "Installing..."
