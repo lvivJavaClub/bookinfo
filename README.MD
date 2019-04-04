@@ -48,3 +48,14 @@ See [Mirroring on Istio.io](https://istio.io/docs/tasks/traffic-management/mirro
 This task demonstrates the traffic mirroring/shadowing capabilities of Istio.
 
 * `make mirroring` - Apply mirroring routing
+
+## Telemetry
+
+See [Telemetry on Istio.io](https://istio.io/docs/tasks/telemetry/)
+Demonstrates how to collect telemetry information from the mesh.
+
+* `make double_request_count` - Add new metrics double_request_count
+* `make prometheus` - Start prometheus
+* `make grafana` - Start grafana
+* `make jaeger` - Start jaeger
+* `make kiali` - Start kiali
