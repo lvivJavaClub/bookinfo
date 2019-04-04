@@ -12,5 +12,5 @@ spec:
         host: reviews
         subset: v1
     mirror:
-      host: httpbin
+      host: reviews
       subset: v2
