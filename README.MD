@@ -24,10 +24,27 @@ Use `make` for install/setup/stop...
 * `make status`  - show status
 * `make stop`    - stop bookinfo
 
-## Fault Injection:
+
+## Fault Injection
 
 See [Fault Injection on Istio.io](https://istio.io/docs/tasks/traffic-management/fault-injection/)
 This task shows you how to inject faults to test the resiliency of your application.
 
 * `make tratings-test-delay` - Injecting an HTTP delay fault
 * `make ratings-test-abort`  - Injecting an HTTP abort fault
+
+
+## Traffic Shifting
+
+See [Traffic Shifting on Istio.io](https://istio.io/docs/tasks/traffic-management/traffic-shifting/)
+Shows you how to migrate traffic from an old to new version of a service.
+
+* `make reviews-50-v3` - Apply weight-based routing
+
+
+## Mirroring
+
+See [Mirroring on Istio.io](https://istio.io/docs/tasks/traffic-management/mirroring/)
+This task demonstrates the traffic mirroring/shadowing capabilities of Istio.
+
+* `make mirroring` - Apply mirroring routing
