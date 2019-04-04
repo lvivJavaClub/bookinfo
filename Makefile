@@ -18,6 +18,7 @@ help:
 	@echo ""
 	@echo "Telemetry:"
 	@echo ""
+	@echo "make double_request_count - Add new metrics double_request_count
 	@echo "make prometheus - Start prometheus"
 	@echo "make grafana - Start grafana"
 	@echo "make jaeger - Start jaeger"
@@ -58,6 +59,10 @@ mirroring:
 	clear
 	@echo "Apply mirroring routing:"
 	kubectl apply -f virtual-service-reviews-mirroring.yaml
+double_request_count:
+	clear
+	@echo "Add new metrics double_request_count"
+	kubectl apply -f new_metrics.yaml
 prometheus:
 	clear
 	@echo "Start prometheus:"

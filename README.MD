@@ -54,6 +54,7 @@ This task demonstrates the traffic mirroring/shadowing capabilities of Istio.
 See [Telemetry on Istio.io](https://istio.io/docs/tasks/telemetry/)
 Demonstrates how to collect telemetry information from the mesh.
 
+* `make double_request_count` - Add new metrics double_request_count
 * `make prometheus` - Start prometheus
 * `make grafana` - Start grafana
 * `make jaeger` - Start jaeger
